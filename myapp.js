@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
   if (req.url === '/' && req.method === 'GET') {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Hola mundo\n');
+    res.end('Mensaje de prueba\n');
   } else if (req.url === '/json' && req.method === 'GET') {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
