@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
   } else if (req.url === '/json' && req.method === 'GET') {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify({ message: 'Hello World in JSON' }));
+    res.end(JSON.stringify({ message: 'Hola mundo. Formato JSON' }));
   } else {
     // Manejo de rutas no encontradas
     res.statusCode = 404;
